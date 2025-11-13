@@ -4,19 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Bloom Valley Nursery</title>
-    <!--<link rel="stylesheet" href="styles.css" />-->
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
     <header>
-      <div>
-        <div>
-          <img src="assets/logo.png" alt="logo" />
+      <div class="header">
+        <div class="header-left">
+          <img class="header-logo" src="assets/logo.png" alt="logo" />
           <h1>Bloom Valley Nursery</h1>
         </div>
-        <img src="assets/icons/bars-solid-full.svg" alt="menu" />
+        <img
+          class="menu-icon"
+          src="assets/icons/bars-solid-full.svg"
+          alt="menu"
+        />
       </div>
-      <nav>
+      <nav class="mobile-menu">
         <ul>
           <li><a href="/products.html">Products</a></li>
           <li><a href="/events.html">Events</a></li>
@@ -26,78 +31,86 @@
     </header>
 
     <main>
-      <section>
-        <h2>Highlight</h2>
-        <img src="assets/imgs/Client1_BirchTree.png" alt="birch tree" />
+      <section class="section-hero">
+        <h2 class="hero-text">Grand Opening</h2>
       </section>
-      <section>
-        <h2>Promotions</h2>
+      <section class="section-promo">
+        <h2 class="sr-only">Promotions</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          The first 100 customers get 10% off their first in-person purchase!
         </p>
       </section>
-      <section>
-        <h2>New Products</h2>
-        <figure>
-          <img src="assets/imgs/Client1_AloePlant.png" alt="aloe plant" />
+      <section class="section-products">
+        <h2>New Products!</h2>
+        <figure class="product-card">
+          <div class="product-img">
+            <img src="assets/imgs/Client1_AloePlant.png" alt="aloe plant" />
+          </div>
           <figcaption>
-            <p>Aloe Plant</p>
-            <p>$5.99</p>
+            <p class="product-name">Aloe Plant</p>
+            <p class="product-price">$5.99</p>
           </figcaption>
         </figure>
-        <figure>
-          <img src="assets/imgs/Client1_AppleTree.png" alt="apple tree" />
+        <figure class="product-card">
+          <div class="product-img">
+            <img src="assets/imgs/Client1_AppleTree.png" alt="apple tree" />
+          </div>
           <figcaption>
-            <p>Apple Tree</p>
+            <p class="product-name">Apple Tree</p>
             <p>$19.99</p>
           </figcaption>
         </figure>
       </section>
-      <section>
-        <h2>Member Benefits</h2>
-        <div>
-          <div>
-            <img src="assets/icons/bucket-solid-full.svg" alt="bucket" />
-            <p>Perk</p>
+      <section class="section-benefits">
+        <h2 class="sr-only">Benefits</h2>
+        <div class="benefits-grid">
+          <div class="benefit-item">
+            <img
+              src="assets/icons/chalkboard-user-solid-full.svg"
+              alt="bucket"
+            />
+            <p>Workshops</p>
           </div>
-          <div>
-            <img src="assets/icons/bucket-solid-full.svg" alt="bucket" />
-            <p>Perk</p>
+          <div class="benefit-item">
+            <img src="assets/icons/calendar-days-solid-full.svg" alt="bucket" />
+            <p>Events</p>
           </div>
-          <div>
-            <img src="assets/icons/bucket-solid-full.svg" alt="bucket" />
-            <p>Perk</p>
+          <div class="benefit-item">
+            <img src="assets/icons/tree-solid-full.svg" alt="bucket" />
+            <p>Seasonal Item</p>
           </div>
-          <div>
-            <img src="assets/icons/bucket-solid-full.svg" alt="bucket" />
-            <p>Perk</p>
+          <div class="benefit-item">
+            <img
+              src="assets/icons/clipboard-check-solid-full.svg"
+              alt="bucket"
+            />
+            <p>Monthly Deals</p>
           </div>
         </div>
       </section>
-      <section>
-        <h2>Categories</h2>
-        <div>
+      <section class="section-categories">
+        <h2 class="sr-only">Categories</h2>
+        <div class="category-card">
           <img src="assets/imgs/Client1_MapleTree.png" alt="maple tree" />
           <p>Trees</p>
         </div>
-        <div>
+        <div class="category-card">
           <img src="assets/imgs/Client1_SpiderPlant.png" alt="spider plant" />
           <p>Plants</p>
         </div>
-        <div>
+        <div class="category-card">
           <img src="assets/imgs/Client1_PottingSoil.png" alt="potting soil" />
           <p>Supplies</p>
         </div>
       </section>
     </main>
     <footer>
-      <div>
-        <form>
+      <div class="footer-left">
+        <form class="news-form">
           <input type="email" />
           <button type="submit">Subscribe</button>
         </form>
-        <div>
+        <div class="socials-group">
           <a href="#">
             <img
               src="assets/icons/facebook-brands-solid-full.svg"
@@ -118,17 +131,20 @@
           </a>
         </div>
       </div>
-      <div>
+      <div class="footer-right">
         <ul>
           <li><a href="/home.html">Home</a></li>
           <li><a href="/products.html">Products</a></li>
           <li><a href="/events.html">Events</a></li>
           <li><a href="/about.html">About</a></li>
         </ul>
-      </div>
-      <div>
-        <address>1234 Address Street<br />City, ST 56789</address>
-        <a href="tel:+15555555555">555-555-5555</a>
+        <div>
+          <address>
+            <p>1234 Address Street</p>
+            <p>City, ST 56789</p>
+          </address>
+          <a href="tel:+15555555555">555-555-5555</a>
+        </div>
       </div>
     </footer>
     <!--<script type="module" src="script.js"></script>-->
