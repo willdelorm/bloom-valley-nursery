@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bloom Valley Nursery</title>
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="styles.css" />
@@ -11,15 +11,17 @@
   <body>
     <header>
       <div class="header">
-        <div class="header-left">
+        <div class="header-left gap-sm">
           <img class="header-logo" src="assets/logo.png" alt="logo" />
           <h1>Bloom Valley Nursery</h1>
         </div>
-        <img
-          class="menu-icon"
-          src="assets/icons/bars-solid-full.svg"
-          alt="menu"
-        />
+        <button>
+          <img
+            class="menu-icon"
+            src="assets/icons/bars-solid-full.svg"
+            alt="menu"
+          />
+        </button>
       </div>
       <nav class="mobile-menu">
         <ul>
@@ -31,7 +33,7 @@
     </header>
 
     <main>
-      <section class="section-hero">
+      <section class="section-hero flex-center">
         <h2 class="hero-text">Grand Opening</h2>
       </section>
       <section class="section-promo">
@@ -48,7 +50,7 @@
           </div>
           <figcaption>
             <p class="product-name">Aloe Plant</p>
-            <p class="product-price">$5.99</p>
+            <p>$5.99</p>
           </figcaption>
         </figure>
         <figure class="product-card">
@@ -64,25 +66,28 @@
       <section class="section-benefits">
         <h2 class="sr-only">Benefits</h2>
         <div class="benefits-grid">
-          <div class="benefit-item">
+          <div class="benefit-item flex-center flex-col">
             <img
               src="assets/icons/chalkboard-user-solid-full.svg"
-              alt="bucket"
+              alt="chalkboard"
             />
             <p>Workshops</p>
           </div>
-          <div class="benefit-item">
-            <img src="assets/icons/calendar-days-solid-full.svg" alt="bucket" />
+          <div class="benefit-item flex-center flex-col">
+            <img
+              src="assets/icons/calendar-days-solid-full.svg"
+              alt="calendar"
+            />
             <p>Events</p>
           </div>
-          <div class="benefit-item">
-            <img src="assets/icons/tree-solid-full.svg" alt="bucket" />
+          <div class="benefit-item flex-center flex-col">
+            <img src="assets/icons/tree-solid-full.svg" alt="tree" />
             <p>Seasonal Item</p>
           </div>
           <div class="benefit-item">
             <img
               src="assets/icons/clipboard-check-solid-full.svg"
-              alt="bucket"
+              alt="clipboard"
             />
             <p>Monthly Deals</p>
           </div>
@@ -104,13 +109,14 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="flex-col">
       <div class="footer-left">
+        <h2 class="news-header">Sign up for our monthly newsletter!</h2>
         <form class="news-form">
-          <input type="email" />
+          <input type="email" id="email" placeholder="Enter email address..." aria-label="email" />
           <button type="submit">Subscribe</button>
         </form>
-        <div class="socials-group">
+        <div class="socials-group flex-center">
           <a href="#">
             <img
               src="assets/icons/facebook-brands-solid-full.svg"
@@ -120,20 +126,20 @@
           <a href="#">
             <img
               src="assets/icons/instagram-brands-solid-full.svg"
-              alt="facebook"
+              alt="instagram"
             />
           </a>
           <a href="#">
             <img
               src="assets/icons/twitter-brands-solid-full.svg"
-              alt="facebook"
+              alt="twitter"
             />
           </a>
         </div>
       </div>
       <div class="footer-right">
         <ul>
-          <li><a href="/home.html">Home</a></li>
+          <li><a href="/index.html">Home</a></li>
           <li><a href="/products.html">Products</a></li>
           <li><a href="/events.html">Events</a></li>
           <li><a href="/about.html">About</a></li>
