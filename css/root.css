@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --color-background: #f7f7f7;
+  --color-on-background: #00231c;
+
+  --color-primary: #014038;
+  --color-on-primary: #f7f7f7;
+  --color-secondary: #f0c06d;
+  --color-tertiary: #98baa0;
+  --color-accent: #bdd4da;
+
+  --box-shadow: rgba(1, 64, 56, 0.2) 0px 8px 24px;
+
+  --font-display: "Trebuchet MS", sans-serif;
+  --font-title-large: "Times New Roman", serif;
+  --font-title: "Impact", sans-serif;
+  --font-subtitle: "Comic Sans MS", sans-serif;
+  --font-body-large: Calibri, sans-serif;
+  --font-body-strong: "Roboto", sans-serif;
+  --font-body: Calibri, sans-serif;
+  --font-captions: "Comfortaa", sans-serif;
+}
