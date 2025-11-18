@@ -3,19 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Bloom Valley Nursery</title>
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/root.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/index.css" />
   </head>
 
   <body>
     <header>
       <div class="header">
-        <div class="header-left gap-sm">
+        <a class="header-left" href="/index.html">
           <img class="header-logo" src="assets/logo.png" alt="logo" />
           <h1>Bloom Valley Nursery</h1>
-        </div>
-        <button>
+        </a>
+        <button class="mobile-menu-btn">
           <img
             class="menu-icon"
             src="assets/icons/bars-solid-full.svg"
@@ -23,21 +27,21 @@
           />
         </button>
       </div>
-      <nav class="mobile-menu">
-        <ul>
-          <li><a href="/products.html">Products</a></li>
-          <li><a href="/events.html">Events</a></li>
-          <li><a href="/about.html">About</a></li>
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li class="nav-list-item"><a href="/products.html">Products</a></li>
+          <li class="nav-list-item"><a href="/events.html">Events</a></li>
+          <li class="nav-list-item"><a href="/about.html">About</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section class="section-hero flex-center">
+      <section class="section-hero">
         <h2 class="hero-text">Grand Opening</h2>
       </section>
       <section class="section-promo">
-        <h2 class="sr-only">Promotions</h2>
+        <h2 class="sr-only">Promotion</h2>
         <p>
           The first 100 customers get 10% off their first in-person purchase!
         </p>
@@ -45,22 +49,26 @@
       <section class="section-products">
         <h2>New Products!</h2>
         <figure class="product-card">
-          <div class="product-img">
-            <img src="assets/imgs/Client1_AloePlant.png" alt="aloe plant" />
-          </div>
-          <figcaption>
-            <p class="product-name">Aloe Plant</p>
-            <p>$5.99</p>
-          </figcaption>
+          <a href="/products.html">
+            <div class="product-img">
+              <img src="assets/imgs/Client1_AloePlant.png" alt="aloe plant" />
+            </div>
+            <figcaption>
+              <p class="product-name">Aloe Plant</p>
+              <p>$5.99</p>
+            </figcaption>
+          </a>
         </figure>
         <figure class="product-card">
-          <div class="product-img">
-            <img src="assets/imgs/Client1_AppleTree.png" alt="apple tree" />
-          </div>
-          <figcaption>
-            <p class="product-name">Apple Tree</p>
-            <p>$19.99</p>
-          </figcaption>
+          <a href="/products.html">
+            <div class="product-img">
+              <img src="assets/imgs/Client1_AppleTree.png" alt="apple tree" />
+            </div>
+            <figcaption>
+              <p class="product-name">Apple Tree</p>
+              <p>$19.99</p>
+            </figcaption>
+          </a>
         </figure>
       </section>
       <section class="section-benefits">
@@ -94,29 +102,34 @@
         </div>
       </section>
       <section class="section-categories">
-        <h2 class="sr-only">Categories</h2>
-        <div class="category-card">
+        <h2>Product Categories</h2>
+        <a href="/products.html" class="category-card">
           <img src="assets/imgs/Client1_MapleTree.png" alt="maple tree" />
           <p>Trees</p>
-        </div>
-        <div class="category-card">
+        </a>
+        <a href="/products.html" class="category-card">
           <img src="assets/imgs/Client1_SpiderPlant.png" alt="spider plant" />
           <p>Plants</p>
-        </div>
-        <div class="category-card">
+        </a>
+        <a href="/products.html" class="category-card">
           <img src="assets/imgs/Client1_PottingSoil.png" alt="potting soil" />
           <p>Supplies</p>
-        </div>
+        </a>
       </section>
     </main>
-    <footer class="flex-col">
+    <footer>
       <div class="footer-left">
         <h2 class="news-header">Sign up for our monthly newsletter!</h2>
         <form class="news-form">
-          <input type="email" id="email" placeholder="Enter email address..." aria-label="email" />
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter email address..."
+            aria-label="email"
+          />
           <button type="submit">Subscribe</button>
         </form>
-        <div class="socials-group flex-center">
+        <div class="socials-group">
           <a href="#">
             <img
               src="assets/icons/facebook-brands-solid-full.svg"
