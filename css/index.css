@@ -104,3 +104,22 @@
   margin: auto;
   text-align: center;
 }
+
+@media (min-width: 768px) {
+  .products-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .benefits-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .categories-group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 2rem auto;
+  }
+}
