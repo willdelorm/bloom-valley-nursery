@@ -37,39 +37,138 @@
     </header>
 
     <main>
+      <section class="btn-group">
+        <button type="button" class="btn-cart">
+          <img
+            src="assets/icons/cart-shopping-solid-full.svg"
+            alt="shopping cart"
+          />
+          <span>View Cart</span>
+        </button>
+      </section>
       <section class="section-categories">
         <h2 class="sr-only">Categories</h2>
-        <div class="category-card">
-          <img src="assets/imgs/Client1_MapleTree.png" alt="maple tree" />
-          <p>Trees</p>
-        </div>
-        <div class="category-card">
-          <img src="assets/imgs/Client1_SpiderPlant.png" alt="spider plant" />
-          <p>Plants</p>
-        </div>
-        <div class="category-card">
-          <img src="assets/imgs/Client1_PottingSoil.png" alt="potting soil" />
-          <p>Supplies</p>
+        <div class="category-group">
+          <div class="category-card">
+            <img src="assets/imgs/Client1_MapleTree.png" alt="maple tree" />
+            <p>Trees</p>
+          </div>
+          <div class="category-card">
+            <img src="assets/imgs/Client1_SpiderPlant.png" alt="spider plant" />
+            <p>Plants</p>
+          </div>
+          <div class="category-card">
+            <img src="assets/imgs/Client1_PottingSoil.png" alt="potting soil" />
+            <p>Supplies</p>
+          </div>
         </div>
       </section>
-      <section>
-        <h2>Products</h2>
-        <figure class="product-card">
-          <div class="product-img">
-            <img src="assets/imgs/Client1_AloePlant.png" alt="aloe plant" />
-          </div>
-          <figcaption>
-            <p class="product-name">Aloe Plant</p>
-            <p>$5.99</p>
-          </figcaption>
-        </figure>
+      <section class="section-products">
+        <h2>All Products</h2>
+        <div class="products-group">
+          <figure class="product-card">
+            <div class="product-img">
+              <img src="assets/imgs/Client1_AloePlant.png" alt="aloe plant" />
+            </div>
+            <figcaption>
+              <p class="product-name">Aloe Plant</p>
+              <p>$5.99</p>
+              <button type="button" class="product-btn">Add to Cart</button>
+            </figcaption>
+          </figure>
+          <figure class="product-card">
+            <div class="product-img">
+              <img src="assets/imgs/Client1_AppleTree.png" alt="apple tree" />
+            </div>
+            <figcaption>
+              <p class="product-name">Apple Tree</p>
+              <p>$35.99</p>
+              <button type="button" class="product-btn">Add to Cart</button>
+            </figcaption>
+          </figure>
+          <figure class="product-card">
+            <div class="product-img">
+              <img src="assets/imgs/Client1_BirchTree.png" alt="Birch Tree" />
+            </div>
+            <figcaption>
+              <p class="product-name">Birch Tree</p>
+              <p>$35.99</p>
+              <button type="button" class="product-btn">Add to Cart</button>
+            </figcaption>
+          </figure>
+          <figure class="product-card">
+            <div class="product-img">
+              <img src="assets/imgs/Client1_BirdHouse.png" alt="Birdhouse" />
+            </div>
+            <figcaption>
+              <p class="product-name">Birdhouse</p>
+              <p>$15.99</p>
+              <button type="button" class="product-btn">Add to Cart</button>
+            </figcaption>
+          </figure>
+          <figure class="product-card">
+            <div class="product-img">
+              <img src="assets/imgs/Client1_MapleTree.png" alt="Maple Tree" />
+            </div>
+            <figcaption>
+              <p class="product-name">Maple Tree</p>
+              <p>$35.99</p>
+              <button type="button" class="product-btn">Add to Cart</button>
+            </figcaption>
+          </figure>
+          <figure class="product-card">
+            <div class="product-img">
+              <img src="assets/imgs/Client1_PottingSoil.png" alt="Potting Soil" />
+            </div>
+            <figcaption>
+              <p class="product-name">Potting Soil</p>
+              <p>$15.99</p>
+              <button type="button" class="product-btn">Add to Cart</button>
+            </figcaption>
+          </figure>
+          <figure class="product-card">
+            <div class="product-img">
+              <img src="assets/imgs/Client1_SpiderPlant.png" alt="Spider Plant" />
+            </div>
+            <figcaption>
+              <p class="product-name">Spider Plant</p>
+              <p>$5.99</p>
+              <button type="button" class="product-btn">Add to Cart</button>
+            </figcaption>
+          </figure>
+          <figure class="product-card">
+            <div class="product-img">
+              <img src="assets/imgs/Client1_StringofPearls.png" alt="String of Pearls" />
+            </div>
+            <figcaption>
+              <p class="product-name">String of Pearls</p>
+              <p>$5.99</p>
+              <button type="button" class="product-btn">Add to Cart</button>
+            </figcaption>
+          </figure>
+          <figure class="product-card">
+            <div class="product-img">
+              <img src="assets/imgs/Client1_WateringCan.png" alt="Watering Can" />
+            </div>
+            <figcaption>
+              <p class="product-name">Watering Can</p>
+              <p>$15.99</p>
+              <button type="button" class="product-btn">Add to Cart</button>
+            </figcaption>
+          </figure>
+        </div>
       </section>
     </main>
     <footer class="flex-col">
       <div class="footer-left">
         <h2 class="news-header">Sign up for our monthly newsletter!</h2>
         <form class="news-form">
-          <input type="email" id="email" placeholder="Enter email address..." aria-label="email" />
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter email address..."
+            aria-label="email"
+          />
           <button type="submit">Subscribe</button>
         </form>
         <div class="socials-group flex-center">

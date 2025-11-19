@@ -12,6 +12,15 @@ body {
   line-height: 1.4;
 }
 
+button {
+  background-color: var(--color-secondary);
+  color: var(--color-on-background);
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.75rem;
+}
+
 h1 {
   font-family: var(--font-display);
   font-size: 1.25rem;
@@ -111,15 +120,6 @@ footer {
   border: none;
   border-radius: 12px;
   padding: 0.5rem 0.75rem;
-}
-
-.news-form button {
-  background-color: var(--color-secondary);
-  color: var(--color-on-background);
-  font-size: 0.75rem;
-  font-weight: bold;
-  padding: 0.5rem 0.75rem;
-  border-radius: 0.75rem;
 }
 
 .socials-group {
