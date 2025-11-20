@@ -17,8 +17,8 @@
       <div class="header">
         <a class="header-left" href="/index.html">
           <img class="header-logo" src="assets/logo.png" alt="logo" />
-          <h1>Bloom Valley Nursery</h1>
         </a>
+        <h1>About</h1>
         <button class="mobile-menu-btn">
           <img
             class="menu-icon"
@@ -37,43 +37,48 @@
     </header>
 
     <main>
-      <section>
-        <h2>Call to Action</h2>
-        <img src="assets/imgs/Client1_BirchTree.png" alt="birch tree" />
+      <section class="about-hero">
+        <h2 class="hero-title">Connect with us!</h2>
       </section>
-      <section>
+      <section class="about-info">
         <h2>About Us</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Bloom Valley Nursery has been a family-owned business since 1985,
+          dedicated to providing high-quality plants and gardening supplies to
+          our community. Our knowledgeable staff is passionate about helping
+          customers create beautiful outdoor spaces.
         </p>
-        <p>Store Hours</p>
-        <ul>
-          <li>8:00am - 6:00pm Tuesday - Sunday</li>
-        </ul>
+        <p>
+          We offer a wide variety of plants, from vibrant flowers to sturdy
+          shrubs, as well as expert advice on plant care and landscaping.
+        </p>
+        <div class="hours-container">
+          <p class="hours-title">Store Hours:</p>
+          <p>8:00am - 6:00pm Tuesday - Sunday</p>
+        </div>
       </section>
       <section>
         <h2>Contact Us</h2>
-        <form>
-          <div>
-            <label>Name</label>
-            <input type="text" />
+        <form class="contact-form">
+          <div class="form-group">
+            <label class="form-label" for="name">Name</label>
+            <input class="form-input" id="name" type="text" />
           </div>
-          <div>
-            <label>Email</label>
-            <input type="email" />
+          <div class="form-group">
+            <label class="form-label" for="email">Email</label>
+            <input class="form-input" id="email" type="email" />
           </div>
-          <div>
-            <label>Message</label>
-            <textarea></textarea>
+          <div class="form-group">
+            <label class="form-label" for="message">Message</label>
+            <textarea class="form-input" id="message"></textarea>
           </div>
-          <div>
-            <button type="submit">Submit</button>
+          <div class="form-group">
+            <button class="form-submit" type="submit">Submit</button>
           </div>
         </form>
       </section>
     </main>
-    
+
     <footer>
       <div class="footer-left">
         <h2 class="news-header">Sign up for our monthly newsletter!</h2>

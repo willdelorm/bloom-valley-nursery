@@ -180,6 +180,9 @@ footer {
 
     /* Header Styling */
     .header {
+      flex: 1;
+      justify-content: flex-start;
+      gap: 2rem;
         padding: 1.5rem 2rem;
     }
 
