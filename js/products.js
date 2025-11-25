@@ -82,10 +82,21 @@ productList.forEach((product) => {
 });
 
 btnClear.addEventListener("click", () => {
+  if (!cartItems.length) {
+    alert("Cart is empty.");
+    return;
+  }
+
   clearCart();
   alert("Cart cleared.");
 });
+
 btnSubmit.addEventListener("click", () => {
+  if (!cartItems.length) {
+    alert("Cart is empty.");
+    return;
+  }
+  
   processOrder();
   clearCart();
   alert("Thank you for your order");
