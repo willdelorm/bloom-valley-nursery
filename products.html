@@ -38,7 +38,7 @@
 
     <main>
       <section class="btn-group">
-        <button type="button" class="btn-cart">
+        <button type="button" id="open-modal" class="btn-cart">
           <img
             src="assets/icons/cart-shopping-solid-full.svg"
             alt="shopping cart"
@@ -118,7 +118,10 @@
           </figure>
           <figure class="product-card">
             <div class="product-img">
-              <img src="assets/imgs/Client1_PottingSoil.png" alt="Potting Soil" />
+              <img
+                src="assets/imgs/Client1_PottingSoil.png"
+                alt="Potting Soil"
+              />
             </div>
             <figcaption>
               <p class="product-name">Potting Soil</p>
@@ -128,7 +131,10 @@
           </figure>
           <figure class="product-card">
             <div class="product-img">
-              <img src="assets/imgs/Client1_SpiderPlant.png" alt="Spider Plant" />
+              <img
+                src="assets/imgs/Client1_SpiderPlant.png"
+                alt="Spider Plant"
+              />
             </div>
             <figcaption>
               <p class="product-name">Spider Plant</p>
@@ -138,7 +144,10 @@
           </figure>
           <figure class="product-card">
             <div class="product-img">
-              <img src="assets/imgs/Client1_StringofPearls.png" alt="String of Pearls" />
+              <img
+                src="assets/imgs/Client1_StringofPearls.png"
+                alt="String of Pearls"
+              />
             </div>
             <figcaption>
               <p class="product-name">String of Pearls</p>
@@ -148,7 +157,10 @@
           </figure>
           <figure class="product-card">
             <div class="product-img">
-              <img src="assets/imgs/Client1_WateringCan.png" alt="Watering Can" />
+              <img
+                src="assets/imgs/Client1_WateringCan.png"
+                alt="Watering Can"
+              />
             </div>
             <figcaption>
               <p class="product-name">Watering Can</p>
@@ -159,11 +171,11 @@
         </div>
       </section>
     </main>
-    
-    <footer class="flex-col">
+
+    <footer>
       <div class="footer-left">
         <h2 class="news-header">Sign up for our monthly newsletter!</h2>
-        <form class="news-form">
+        <form id="subscription-form" class="news-form">
           <input
             type="email"
             id="email"
@@ -172,7 +184,7 @@
           />
           <button type="submit">Subscribe</button>
         </form>
-        <div class="socials-group flex-center">
+        <div class="socials-group">
           <a href="#">
             <img
               src="assets/icons/facebook-brands-solid-full.svg"
@@ -209,6 +221,25 @@
         </div>
       </div>
     </footer>
-    <!--<script type="module" src="script.js"></script>-->
+
+    <div id="modal" class="modal hidden">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Cart</h2>
+          <img id="close-modal" class="modal-close" src="assets/icons/xmark-solid-full.svg" alt="close shopping cart">
+        </div>
+        <ul id="cart-items" class="cart-items">
+          <p>No items in cart.</p>
+        </ul>
+        <div class="btn-group">
+          <button id="btn-clear" class="btn-modal">Clear Cart</button>
+          <button id="btn-submit" class="btn-modal btn-submit">
+            Process Order
+          </button>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="js/script.js"></script>
+    <script type="module" src="js/products.js"></script>
   </body>
 </html>
